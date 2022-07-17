@@ -1,10 +1,12 @@
-public class Circle extends Shape {
+public class Circle implements IShape {
     int radius;
+    String color;
 
     final double PI = 3.14;
 
     public Circle(String color, int radius) {
-        super(color);
+        // super(color);
+        this.color = color;
         this.radius = radius;
     }
 
@@ -18,9 +20,9 @@ public class Circle extends Shape {
         return 2 * PI * this.radius;
     }
 
-    @Override
-    public void display() {
-        System.out.println("this is a " + super.color + " " + "circle");
-    }
+    // @Override
+    // public void draw() {
+    // System.out.println("this is a " + this.color + " " + "circle");
+    // }
 
 }

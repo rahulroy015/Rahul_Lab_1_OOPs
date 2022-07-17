@@ -1,8 +1,11 @@
-public class Rectangle extends Shape {
+public class Rectangle implements IShape {
     int length, width;
+    String color;
+
+    // Renderer renderer;
 
     public Rectangle(String color, int length, int width) {
-        super(color);
+        this.color = color;
         this.length = length;
         this.width = width;
 
@@ -18,8 +21,13 @@ public class Rectangle extends Shape {
         return 2 * (this.length + this.width);
     }
 
-    @Override
-    public void display() {
-        System.out.println("this is a " + super.color + " " + "rectangle");
-    }
+    // @Override
+    // public void draw() {
+    // System.out.println("this is a " + this.color + " " + "rectangle");
+    // }
+
+    // @Override
+    // public void draw(String message) {
+    // System.out.println(message);
+    // }
 }

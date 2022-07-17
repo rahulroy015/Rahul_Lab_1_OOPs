@@ -7,7 +7,13 @@ public class Square extends Rectangle {
     }
 
     @Override
-    public void display() {
-        System.out.println("this is a " + super.color + " " + "square");
+    public double calculateArea() {
+        System.out.println("Calculate method is called");
+        return this.width * this.length;
     }
+
+    // @Override
+    // public void draw() {
+    // System.out.println("this is a " + super.color + " " + "square");
+    // }
 }
